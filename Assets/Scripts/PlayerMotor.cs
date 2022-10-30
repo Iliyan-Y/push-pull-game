@@ -44,4 +44,15 @@ public class PlayerMotor : MonoBehaviour
     }
   }
 
+
+  public void Sprint()
+  {
+    // TODO
+  }
+
+  public void Crouch()
+  {
+    // TODO
+  }
+
 }
