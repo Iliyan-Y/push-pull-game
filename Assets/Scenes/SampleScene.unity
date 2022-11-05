@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44658792, g: 0.49642283, b: 0.5748252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,8 @@ GameObject:
   - component: {fileID: 15806241}
   - component: {fileID: 15806240}
   - component: {fileID: 15806239}
-  m_Layer: 0
+  - component: {fileID: 15806243}
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,6 +221,19 @@ Transform:
   m_Father: {fileID: 813552318}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &15806243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15806238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 218743b06509282cc9f343e238773bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: Looking at cube 4
 --- !u!20 &652240945 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1809468296523693624, guid: 8d931c338ef0e4d238ae46161d127fb9, type: 3}
@@ -986,6 +1000,22 @@ MonoBehaviour:
   cam: {fileID: 652240945}
   xSensitivity: 30
   ySensitivity: 30
+--- !u!114 &1948735158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948735146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c9c9e430483f3fe2aeea120df8cc044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &1809468296408929099
 PrefabInstance:
   m_ObjectHideFlags: 0
