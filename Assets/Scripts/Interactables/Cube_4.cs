@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Cube_4 : Interactable
 {
-  // Start is called before the first frame update
+  [SerializeField]
+  private GameObject cube4;
+  private bool isRotating = false;
   protected override void Interact()
   {
-    Debug.Log($"Looking at with {gameObject.name}");
+    isRotating = !isRotating;
+    cube4.GetComponent<Animator>().SetBool("IsRotating", isRotating);
   }
 }
